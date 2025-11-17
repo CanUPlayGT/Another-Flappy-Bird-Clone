@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://dnsiygfhjhqo2"]
-
-[ext_resource type="Script" uid="uid://7ibf148mqpi5" path="res://GroundSpawner.cs" id="1_0f027"]
-
-[node name="Main Scene" type="Node2D"]
-
-[node name="GroundSpawner" type="Node2D" parent="."]
-script = ExtResource("1_0f027")

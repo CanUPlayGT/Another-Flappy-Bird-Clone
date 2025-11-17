@@ -1,11 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://bs7sptdehtyqy"]
+[gd_scene load_steps=4 format=3 uid="uid://bs7sptdehtyqy"]
 
 [ext_resource type="Texture2D" uid="uid://dcsdi3pr0lno2" path="res://assets/sprites/base.png" id="1_7eewn"]
+[ext_resource type="Script" uid="uid://djiml6y71e0yh" path="res://src/Ground.cs" id="1_gk1e0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7eewn"]
-size = Vector2(336, 110)
+size = Vector2(336, 112)
 
 [node name="StaticBody2D" type="StaticBody2D"]
+collision_mask = 0
+script = ExtResource("1_gk1e0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 1)
